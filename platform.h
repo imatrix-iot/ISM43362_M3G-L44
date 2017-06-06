@@ -291,8 +291,9 @@ typedef enum
 #define STDIO_UART ( WICED_UART_1 )
 
 /* SPI flash is present */
-//#define WICED_PLATFORM_INCLUDES_SPI_FLASH
-#define WICED_SPI_FLASH_CS ( WICED_GPIO_5 )
+#define WICED_PLATFORM_INCLUDES_SPI_FLASH
+//#define WICED_SPI_FLASH_CS ( WICED_GPIO_5 )
+#define WICED_SPI_FLASH_CS ( WICED_GPIO_2 )
 
 /* Components connected to external I/Os */
 #define WICED_LED1         ( WICED_GPIO_3 )

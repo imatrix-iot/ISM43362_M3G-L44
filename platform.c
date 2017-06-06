@@ -222,7 +222,7 @@ platform_uart_driver_t platform_uart_drivers[WICED_UART_MAX];
 
 /* SPI flash. Exposed to the applications through include/wiced_platform.h */
 #if defined ( WICED_PLATFORM_INCLUDES_SPI_FLASH )
-wiced_spi_device_t wiced_spi_flash =
+const wiced_spi_device_t wiced_spi_flash =
 {
     .port        = WICED_SPI_1,
     .chip_select = WICED_SPI_FLASH_CS,
